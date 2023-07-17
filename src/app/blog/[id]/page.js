@@ -5,7 +5,7 @@ import React from "react";
 import Button from '@/component/button/button';
 import { notFound } from 'next/navigation'
  async function getData(id) {
-    const res = await fetch(`https://may-ashy.vercel.app/api/posts/${id}`,{cache:"no-cache"})
+    const res = await fetch(`https://narakorn.vercel.app/api/posts/${id}`,{cache:"no-cache"})
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
    
