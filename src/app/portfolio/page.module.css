@@ -1,0 +1,157 @@
+.containermain{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+.imgcontainer{
+    width: 1200px;
+    height: 500px;
+    position: relative;
+
+}
+
+.img{
+    object-fit: cover;
+
+}
+
+.mainTitle{
+    font-size: 80px;
+
+}
+.selectTitle{
+    font-size: 50px;
+}
+
+.card{
+    border: 5px solid #bbb;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.card .img{
+ object-fit: cover;
+}
+
+.items{
+    display: flex;
+    gap: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title{
+    font-size: 25px;
+   /*  position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 150px;
+    background: rgba(102, 98, 98, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+@media screen and (max-width: 1288px){
+    .mainTitle{
+        font-size: 60px;
+    }
+    .selectTitle{
+        font-size: 40px;
+    }
+    .card{
+        border: 5px solid #bbb;
+        border-radius: 5px;
+        width: 250px;
+        height: 250px;
+        position: relative;
+      }
+  
+  
+  }
+  
+@media screen and (max-width: 1024px){
+      .mainTitle{
+          font-size: 50px;
+      }
+      .selectTitle{
+          font-size: 30px;
+      }
+      .card{
+        border: 5px solid #bbb;
+          border-radius: 5px;
+          width: 200px;
+          height: 200px;
+          position: relative;
+        }
+    
+    
+    }
+
+@media screen and (max-width: 768px){
+      .mainTitle{
+          font-size: 40px;
+      }
+      .selectTitle{
+          font-size: 20px;
+      }
+      .card{
+          border: 5px solid #bbb;
+          border-radius: 5px;
+          width: 150px;
+          height: 150px;
+          position: relative;
+        }
+        .items{
+            gap: 20px;
+        }.title{
+            font-size: 18px;
+
+        }
+    
+    }
+
+@media screen and (max-width: 480px){
+    .container{
+        gap: 20px;
+    }
+      .mainTitle{
+          font-size: 35px;
+      }
+      .selectTitle{
+          font-size: 20px;
+      }
+      .card{
+          border: 5px solid #bbb;
+          border-radius: 5px;
+          width: 100px;
+          height: 100px;
+          position: relative;
+        }
+        .items{
+            gap: 20px;
+        }.title{
+            font-size: 18px;
+
+        }
+       /*  .items{
+        flex-direction: column;
+        } */
+    
+    }

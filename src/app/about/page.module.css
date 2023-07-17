@@ -1,0 +1,318 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.imgcontainer{
+    width: 1200px;
+    height: 500px;
+    position: relative;
+}
+
+.img{
+    object-fit: cover;
+
+}
+
+.htext{
+    font-size: 50px;
+/*     background: linear-gradient(to bottom,#00bbff,#9ad3e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.imgtext{
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripsion{
+    display: flex;
+    gap: 100px;
+    width: 70%;
+    
+}
+
+.about{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutmetext{
+  font-size: 22px;
+}
+
+
+.whatdo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+
+.skilliimage{
+    min-width: 100px;
+    max-width: 100px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.simage{
+    object-fit: contain;
+}
+
+.img2{
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.box{
+    margin-top: 5px;
+
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    position: relative;
+/*     background-color: rgb(242, 242, 242);
+
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px; */
+
+}
+
+.boxcontact{
+    cursor: pointer;
+    margin-top: 5px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    position: relative;
+/*     background-color: rgb(242, 242, 242);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px; */
+}
+
+.input{
+    cursor: pointer;
+    height: 60px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+    background-color: #98f3ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: ease-in-out 0.1s;
+  
+   }
+.contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+  @media screen and (max-width: 1288px){
+    .imgcontainer{
+        min-width: 1000px;
+        width: 100%;
+        height: 450px;
+       }
+       .whatdotext{
+        font-size: 24px;
+       }
+       .contacttext{
+        font-size: 24px;
+       }
+  
+  }
+
+  @media screen and (max-width: 1024px){
+    .imgcontainer{
+        min-width: 700px;
+        width: 100%;
+        height: 400px;
+       }
+       .skilliimage{
+        min-width: 90px;
+       }
+       .htext{
+        font-size: 35px;
+       }
+       .abouttext{
+        font-size: 25px;
+       }
+       .whatdotext{
+        font-size: 20px;
+       }
+       .contacttext{
+        font-size: 20px;
+       }
+       .skillitem{
+        font-size: 18px;
+       }
+       .input{
+        font-size: 18px;
+       }
+  
+  }
+  @media screen and (max-width: 768px){
+    .imgcontainer{
+        min-width: 500px;
+        width: 100%;
+        height: 300px;
+       }
+       .htext{
+        font-size: 35px;
+       }
+       .abouttext{
+        font-size: 25px;
+       }
+       .whatdotext{
+        font-size: 20px;
+       }
+       .contacttext{
+        font-size: 20px;
+       }
+       .input{
+        font-size: 15px;
+       }
+       .skillitem{
+        font-size: 15px;
+       }
+       .descripsion{
+       flex-direction: column;
+        
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .imgcontainer{
+        min-width: 300px;
+        width: 100%;
+        height: 200px;
+       }
+       .skilliimage{
+        max-height: 50px;
+        min-width: 50px;
+       }
+       .htext{
+        font-size: 25px;
+       }
+       .abouttext{
+        font-size: 20px;
+       }
+       .whatdotext{
+        font-size: 18px;
+       }
+       .contacttext{
+        font-size: 18px;
+       }
+       .input{
+        font-size: 12px;
+       }
+       .skillitem{
+        font-size: 12px;
+       }
+       .whatdo{
+        gap: 1px;
+       }
+       .contact{
+        gap: 10px;
+      }
+      .box{ 
+        width: 100%;
+    }
+    
+    .boxcontact{
+        width: 100%;
+    }
+
+    .descripsion{
+        gap: 50px;
+    }
+  
+  }
+
+/*   @media screen and (max-width: 1024px){
+    .title{
+      font-size: 40px;
+    }
+    .btnshare{
+      width: 150px;
+      height: 40px;
+     
+     }
+  
+  
+  }
+  
+  @media screen and (max-width: 768px){
+    .container{
+      flex-wrap: wrap-reverse;
+      gap: 50px;
+    }
+    .title{
+      font-size: 40px;
+    }
+    .btnshare{
+      width: 150px;
+      height: 40px;
+     
+     }
+  
+     .imgcontainer{
+      height: 400px;
+     }
+  
+  }
+  
+  @media screen and (max-width: 480px){
+    .container{
+      flex-wrap: wrap-reverse;
+    }
+    .title{
+      font-size: 20px;
+    }
+    .btnshare{
+      width: 150px;
+      height: 40px;
+     
+     }
+  
+     .imgcontainer{
+      height: 200px;
+     }
+  
+  } */

@@ -1,91 +1,64 @@
+"use client"
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import { useState } from 'react'
+import home from 'public/homepageimage.png'
+import Button from '@/component/button/button'
 export default function Home() {
+  const [test,setTest] = useState("")
+  function testfun(e){
+      setTest(e)
+   
+
+  }
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+   <div className={styles.container}>
+      <div className={styles.item+" "+styles.titles}>
+        <h1 className={styles.title}> 
+    NarakornThitpong
+    
+        </h1>
+        <Button url={`/portfolio`} text="Portfolio" color="#98f3ff" textcolor="black"/>
+      </div>
+      <div className={styles.item+" "+styles.image}>
+        <div className={styles.imgcontainer}  /* onClick={()=>{testfun(1)}} */>        
+        <Image src="/homepageimage.png" className={styles.img} fill alt='' priority/>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+      {/* <div className={styles.item}>
+        <div className={styles.imgcontainer+" "+styles[test == 1 ? "imgcontainerfull": ""]}  onClick={()=>{testfun(1)}}>   
+        <div className={styles.imgactive}>
+          <Image src="/homepageimage.png" width={300} height={500} className={styles.imgpv} alt='' />
+          </div>
+        <div className={styles.imgpv}>
+        <Image src="/homepageimage.png" width={500} height={500} className={styles.imgfull} alt='' />
+          </div>   
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className={styles.imgcontainer+" "+styles[test == 2 ? "imgcontainerfull": ""]}  onClick={()=>{testfun(2)}}>   
+        <div className={styles.imgactive}>
+          <Image src="/homepageimage.png" width={300} height={500} className={styles.imgpv} alt='' />
+          </div>
+        <div className={styles.imgpv}>
+        <Image src="/homepageimage.png" width={500} height={500} className={styles.imgfull} alt='' />
+          </div>   
+        </div>
+        <div className={styles.imgcontainer+" "+styles[test == 3 ? "imgcontainerfull": ""]}  onClick={()=>{testfun(3)}}>   
+        <div className={styles.imgactive}>
+          <Image src="/homepageimage.png" width={300} height={500} className={styles.imgpv} alt='' />
+          </div>
+        <div className={styles.imgpv}>
+        <Image src="/homepageimage.png" width={500} height={500} className={styles.imgfull} alt='' />
+          </div>   
+        </div>
+        <div className={styles.imgcontainer+" "+styles[test == 4 ? "imgcontainerfull": ""]}  onClick={()=>{testfun(4)}}>   
+        <div className={styles.imgactive}>
+          <Image src="/homepageimage.png" width={300} height={500} className={styles.imgpv} alt='' />
+          </div>
+        <div className={styles.imgpv}>
+        <Image src="/homepageimage.png" width={500} height={500} className={styles.imgfull} alt='' />
+          </div>   
+        </div>
+      </div> */}
+   </div>
   )
 }

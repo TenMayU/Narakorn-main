@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+.imgcontainer{
+/*     width: 1200px; */
+    height: 500px;
+    position: relative;
+    flex: 1;
+    border: 3px solid #bbb;
+}
+
+.img{
+    object-fit: contain;
+    
+}
+
+.items{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* .items:nth-child(1n){
+    flex-direction: row-reverse;
+}
+ */
+.btn{
+    display: flex;
+    gap: 10px;
+}
+
+.btncolor{
+    background-color: #a2dda2;
+}
+.des{
+    font-size: 16px;
+}
+.des2{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1288px){
+    .imgcontainer{
+        /*     width: 1200px; */
+            height: 400px;
+            position: relative;
+            flex: 1;
+            border: 3px solid #bbb;
+        }
+        .selectTitle{
+            font-size: 40px;
+        }
+  
+  }
+  
+@media screen and (max-width: 1024px){
+    .imgcontainer{
+        /*     width: 1200px; */
+            height: 300px;
+            position: relative;
+            flex: 1;
+            border: 3px solid #bbb;
+        }
+        .title{
+            font-size: 25px;
+        }
+        .selectTitle{
+            font-size: 30px;
+        }
+    
+    }
+
+@media screen and (max-width: 768px){
+    .container{  
+        gap: none;
+        margin-top: 20px;
+    }
+    .items{
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .items{
+      flex-direction: column-reverse;
+
+    }
+    
+    .imgcontainer{
+            width: 300px;
+            min-height: 200px;
+            position: relative;
+            flex: 1;
+            border: 3px solid #bbb;
+        }
+        .title{
+            font-size: 20px;
+        }
+        .des{
+            font-size: 14px;
+        }
+        .des2{
+            font-size: 10px;
+        }
+        .selectTitle{
+            font-size: 20px;
+        }
+    }
+
+@media screen and (max-width: 480px){
+    .items{
+        flex-direction: column-reverse;
+  
+      }
+      
+      .imgcontainer{
+              width: 200px;
+              min-height: 150px;
+              position: relative;
+              flex: 1;
+              border: 3px solid #bbb;
+          }
+
+        .title{
+            font-size: 16px;
+        }
+        .des{
+            font-size: 12px;
+        }
+        .des2{
+            font-size: 8px;
+        }
+        .selectTitle{
+            font-size: 20px;
+        }
+    
+    }

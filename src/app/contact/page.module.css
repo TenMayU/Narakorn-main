@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+  }
+  
+  .item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .imgcontainer{
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  
+  .img{
+  object-fit: contain;
+  transition: ease-in-out 0.1s;
+  }
+  
+  .box{
+    margin-top: 5px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.input{
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    border: none;
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+    background-color: #98f3ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: ease-in-out 0.1s;
+  
+   }
