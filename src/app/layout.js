@@ -10,7 +10,8 @@ const Kanits = Kanit({ subsets: ['thai'], weight:['200'] })
 export const metadata = {
   title: 'NarakornBlog',
   description: 'NarakornProfile',
-  
+
+
 }
 
 export default function RootLayout({ children }) {

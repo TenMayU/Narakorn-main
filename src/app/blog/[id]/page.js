@@ -45,7 +45,7 @@ import { notFound } from 'next/navigation'
               </div>
               <div className={styles.contentcontainer}>
                    <div className={styles.mainimg}>
-                     <Image src={data.img} className={styles.img} fill/>
+                     <Image src={data.img} className={styles.img} fill sizes='(max-width: 1200px)' alt={data.title}/>
                    </div>
                    <div className={styles.content}>
                       <p className={styles.contentparagraph}>{data.content} </p>

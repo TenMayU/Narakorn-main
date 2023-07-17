@@ -40,13 +40,13 @@ function Blog(){
               </div>   
            </div>
            <div className={styles.imgcontainer}>
-             <Image src={e.img} fill className={styles.img}/>
+             <Image src={e.img} fill sizes='(max-width: 1200px)' alt={e.title} className={styles.img}/>
            </div>
          </div>
           )
         }) 
           }
-   
+         {data ? "Not have data" : ""}
      
  
         </div>

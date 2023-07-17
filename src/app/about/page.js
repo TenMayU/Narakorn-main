@@ -53,7 +53,7 @@ const [test,settest] = useState('')
 
           <div className={styles.titles} >
             <div className={styles.imgcontainer}>
-               <Image src='/profile1.png'  fill  className={styles.img} alt='narakorn'/>
+               <Image src='/profile1.png'  fill priority sizes='(max-width: 1200px)' className={styles.img} alt='narakorn'/>
              </div>
             <div className={styles.imgtext}> 
               <h1 className={styles.htext}>Narakorn Thitpong</h1>
@@ -95,20 +95,20 @@ const [test,settest] = useState('')
                  <h1 className={styles.whatdotext}>Programing Skill</h1>
                 <div className={styles.box}>
                   <div className={styles.skilliimage} >
-                    <Image src='/html.png' fill className={styles.simage} alt='html'/>
+                    <Image src='/html.png' fill priority sizes='(max-width: 1200px)' className={styles.simage} alt='html'/>
                   </div>
                   
                   <h3 className={styles.skillitem}>Html Css</h3>
                  </div>
                  <div className={styles.box}>
                  <div className={styles.skilliimage} >
-                  <Image src='/javascript.png' fill className={styles.simage} alt='js'/>
+                  <Image src='/javascript.png' fill priority sizes='(max-width: 1200px)' className={styles.simage} alt='js'/>
                   </div>   
                   <h3 className={styles.skillitem}>Javascript</h3>
                   </div>          
                  <div className={styles.box}>
                  <div className={styles.skilliimage} >
-                  <Image src='/react.png' fill className={styles.simage} alt='react' />
+                  <Image src='/react.png' fill priority sizes='(max-width: 1200px)' className={styles.simage} alt='react' />
                   </div>
                   <h3 className={styles.skillitem}>NextJS framwork (ReactJS)</h3>
                   </div>
@@ -119,20 +119,20 @@ const [test,settest] = useState('')
                 <div className={styles.whatdo}>
                       <div className={styles.boxcontact} onClick={()=>{copy("tennarakorn19@gmail.com")}}>
                        <div className={styles.skilliimage} >
-                        <Image src='/email.png' className={styles.img2} fill alt='email'/>
+                        <Image src='/email.png' className={styles.img2} fill priority sizes='(max-width: 1200px)' alt='email'/>
                         </div>
                         <input className={styles.input} id="github" /* ref={ref} */ value="tennarakorn19@gmail.com" disabled/>
                         </div>   
                       <div className={styles.boxcontact} onClick={()=>{copy("082-698-2843")}}>
                         <div className={styles.skilliimage} >
-                          <Image src='/tel.png'  className={styles.img2} fill alt='tel'/>
+                          <Image src='/tel.png'  className={styles.img2} fill priority sizes='(max-width: 1200px)' alt='tel'/>
                          </div>   
                         <input className={styles.input} id="tel" /* ref={ref} */ type='tel' /* onChange={ e => handleinput(e)} */ disabled value="082-698-2843"/>
                         {/* <input className={styles.input} id="tel"  ref={ref} type='tel' onChange={ e => handleinput(e)} value={test}/>  */}
                         </div>   
                       <div className={styles.boxcontact} onClick={()=>{copy("tennarakorn19@gmail.com")}} >
                       <div className={styles.skilliimage} >
-                        <Image src='/github.png' className={styles.img2} fill alt='github'/>
+                        <Image src='/github.png' className={styles.img2} fill priority sizes='(max-width: 1200px)' alt='github'/>
                           </div>  
                           <a className={styles.input} href='https://github.com/TenMayU' >github.com/TenMayU</a>
                         </div>   

@@ -26,7 +26,7 @@ function portfolio(){
               </p>
            </div>
            <div className={styles.imgcontainer}>
-             <Image src="/smartphone.png" fill className={styles.img}/>
+             <Image src="/smartphone.png" fill priority sizes='(max-width: 1200px)' alt='smartphone' className={styles.img}/>
            </div>
         </div>
         <div className={styles.items}>
@@ -47,7 +47,7 @@ function portfolio(){
               </p>  
            </div>
            <div className={styles.imgcontainer}>
-             <Image src="/heal1.png" fill className={styles.img}/>
+             <Image src="/heal1.png" fill priority sizes='(max-width: 1200px)' alt='heal' className={styles.img}/>
            </div>
         </div>
 

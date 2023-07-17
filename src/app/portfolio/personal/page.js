@@ -19,12 +19,12 @@ function portfolio(){
               when i started learning basic web development.
               </p>
               <div className={styles.btn}>
-              <Button url="" text="Go to website" color="#98f3ff" textcolor="black"/>
-              <Button url="" text="Github" color="#a2dda2" textcolor="black" />
+              <Button url="https://tenmayu.github.io/narakornbasic/" text="Go to website" color="#98f3ff" textcolor="black"/>
+              <Button url="https://github.com/TenMayU/narakornbasic" text="Github" color="#a2dda2" textcolor="black" />
               </div>   
            </div>
            <div className={styles.imgcontainer}>
-             <Image src="/portbg1.png" fill className={styles.img}/>
+             <Image src="/portbg1.png" fill sizes='(max-width: 1200px)' alt='project' priority className={styles.img}/>
            </div>
         </div>
 

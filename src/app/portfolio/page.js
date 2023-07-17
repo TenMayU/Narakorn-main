@@ -10,13 +10,13 @@ function portfolio(){
         <div className={styles.items}>
                 <Link href="/portfolio/graduate" className={styles.item}>
                 <div className={styles.card}>
-                    <Image src="/portbg3.png" fill className={styles.img} />
+                    <Image src="/portbg3.png" fill priority sizes='(max-width: 1200px)' alt='graduate' className={styles.img} />
                  </div>
                    <span className={styles.title}>Graduate Project</span>
                 </Link>
                 <Link href="/portfolio/personal" className={styles.item}>    
                   <div className={styles.card}>
-                    <Image src="/portbg1.png" fill className={styles.img} />
+                    <Image src="/portbg1.png" fill className={styles.img} sizes='(max-width: 1200px)' alt='project' />
                  </div>
                  <span className={styles.title}>Personal Project</span>
                 </Link>
