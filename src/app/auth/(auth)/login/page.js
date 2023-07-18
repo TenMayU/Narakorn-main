@@ -13,7 +13,12 @@ function login(){
         signIn("credentials", {
             email,
             password,
-          });
+            redirect: false
+          }).then((callback=>{
+            if(callback?.error){
+                alert(callback.error)
+            }
+          }))
        
      } 
 
