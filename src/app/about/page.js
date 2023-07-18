@@ -134,7 +134,7 @@ const [test,settest] = useState('')
                       <div className={styles.skilliimage} >
                         <Image src='/github.png' className={styles.img2} fill priority sizes='(max-width: 1200px)' alt='github'/>
                           </div>  
-                          <a className={styles.input} href='https://github.com/TenMayU' >github.com/TenMayU</a>
+                          <a className={styles.input+" "+styles.link} href='https://github.com/TenMayU' >github.com/TenMayU</a>
                         </div>   
                 </div>
               </div>
