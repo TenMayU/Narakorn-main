@@ -53,6 +53,9 @@ const handler = NextAuth({
         }
      })
     ],
+    session:{
+        strategy:"jwt"
+    },
     pages: {
         signIn: '/dashboard',
         error: `/dashboard/login`

@@ -19,8 +19,23 @@
     background:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+   overflow: hidden;
   }
 
+  .inputcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+
+  }
+
+  .span{
+    position: relative;
+    font-size: 12px;
+    color: rgb(219, 105, 105);
+  }
   .input{
     width: 200px;
     height: 40px;
@@ -40,7 +55,38 @@
     transition: ease-in-out 0.1s;
     color: black;
     font-size:20px;
+
    }
+
+   .load{
+    border-top: #49ecb6 solid 5px;
+    border-width: 1px;
+    content: "";
+    background:#9c9c9c;
+    opacity: 0.5;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+     border-radius: 20px;
+    z-index: 1;
+   }
+
+   
+  .load::before{
+    content: "";
+    background-color: #49ecb6;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spin 0.5s linear infinite ;
+  }
+  @keyframes spin {
+      100%{
+        transform: translateX(500px);
+      }
+  }
 
    @media screen and (max-width: 1288px){
     .form{
@@ -70,6 +116,8 @@
       font-size:20px;
      }
   }
+
+
 
   @media screen and (max-width: 1024px){
     .form{
