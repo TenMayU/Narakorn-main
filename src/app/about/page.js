@@ -74,7 +74,7 @@ const [test,settest] = useState('')
             <div className={styles.about}>
                 <h1 className={styles.abouttext}>Career Objective</h1>
                 <p className={styles.aboutmetext}>
-                I determine to self improvement with web developer in the fontend position. And trying to have good cooperation and communication with the team.
+                I am committed to improving myself to become a web developer. Focus on the Frontend position and will be extended to Full stack. Learn new tools and tech to improve myself
                 </p>
               </div>
               </div>
@@ -111,6 +111,12 @@ const [test,settest] = useState('')
                   <Image src='/react.png' fill priority sizes='(max-width: 1200px)' className={styles.simage} alt='react' />
                   </div>
                   <h3 className={styles.skillitem}>NextJS framwork (ReactJS)</h3>
+                  </div>
+                 <div className={styles.box}>
+                 <div className={styles.skilliimage} >
+                  <Image src='/tailwindtrans.png' fill priority sizes='(max-width: 1200px)' className={styles.simage} alt='react' />
+                  </div>
+                  <h3 className={styles.skillitem}>TailwindCSS (ReactJS)</h3>
                   </div>
                {/*  <Button url="/portfolio" text="Portfolio"/> */}
               </div>
