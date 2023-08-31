@@ -32,9 +32,7 @@
     justify-content: center;
 }
 
-.items:nth-child(2n+1){
-    flex-direction: row-reverse;
-}
+
 
 .btn{
     display: flex;
@@ -120,7 +118,7 @@
       
       .imgcontainer{
               width: 200px;
-              min-height: 150px;
+              height: 150px;
               position: relative;
               flex: 1;
               border: 3px solid #bbb;
