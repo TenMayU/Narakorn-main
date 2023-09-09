@@ -65,7 +65,7 @@ const [test,settest] = useState('')
                 <h1 className={styles.abouttext}>About Me</h1>
                 <p className={styles.aboutmetext}>Hi. My name is Narakorn Thitpong nickname Ten I graduated from business administration program in 
                 business computer faculty of administrative science Kalasin university. I learn basic Web development in university when i was 3rd year 
-                then I have studied more by self. Now i want to be Web developer i'll start from Fontend developer and  i continue to study more and more.
+                then I have studied more by self. Now i want to be Web developer i'll start from Frontend developer and  i continue to study more and more.
                 </p>
               </div>
          
